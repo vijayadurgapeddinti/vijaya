@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let i of products">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">{{i.item_name}}</h2>
+                </div>
+                <div class="card-body">
+                    <img class="card-img-top" [src]="i.image" height="200px" width="200px">
+                    <h4>{{i.restaurant}}</h4>
+                </div>
+                <div class="card-footer">
+                    <h4>{{i.price}}</h4>
+                    <div *ngIf="button ;else add">
+                        <button class="btn btn-success" (click)="additem()">ADD</button>
+                    </div>
+                    <ng-template #add>
+                        <div class="btn-group">
+                            <button class="btn btn-success" (click)="addre(i.id)">+</button>
+                            <button class="btn btn-success ">{{i.items}}</button>
+                            <button class="btn btn-success " (click)="subre(i.id)">-</button>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

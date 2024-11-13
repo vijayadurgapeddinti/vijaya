@@ -1,0 +1,41 @@
+a{
+    text-decoration:none;
+}
+.container{
+    margin-left:500px;
+    margin-top:90px;
+}
+.rate{
+    border:1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.116);
+    width:750px;
+    font-style:inherit;
+}
+.me{
+    font-style: normal;
+    color: rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+}
+.add{
+   
+   
+    background-color: white;
+    border:1px solid rgba(0, 0, 0, 0.411);
+
+    }
+    .btn{
+        margin-left:580px;
+        margin-top:-30px;
+        
+        border-radius: 10px;
+    }
+.popup{
+    background-color: rgb(166, 238, 144);
+
+    
+}
+btn1:hover .popup{
+display:none;
+}
